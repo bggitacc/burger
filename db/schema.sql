@@ -1,14 +1,13 @@
 ### Schema
+
 CREATE DATABASE burgers_db;
-USE pets_db;
+USE burgers_db;
 
-CREATE TABLE `burgers`
+CREATE TABLE burgers
 (
-	`id` int NOT NULL AUTO_INCREMENT,
-	`burger_name` VARCHAR(255) NOT NULL,
-	`devoured` BOOLEAN NOT NULL DEFAULT false,
-	`date` TIMESTAMP NOT NULL,
-
-	PRIMARY KEY (`id`)
+	id int NOT NULL AUTO_INCREMENT,
+	burger_name varchar(255) NOT NULL,
+	devoured BOOLEAN DEFAULT false,
+	date DATE NOT NULL,
+	PRIMARY KEY (id)
 );
-
